@@ -1,0 +1,33 @@
+.footer{
+    min-height: 300px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.footer div > h3{
+    color:white;
+}
+.footer div ul li{
+    color:white;
+}
+.aten > p{
+    color:white
+}
+.redes{
+    color:white;
+}  
+.redes ul{
+    list-style: none;
+}
+
+.redes ul li a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+}
+.redes ul li img{
+    margin: 15px;
+}

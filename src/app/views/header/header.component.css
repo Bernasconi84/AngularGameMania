@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,200;1,300;1,600;1,700;1,900&display=swap');
+.container-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100vw;
+    
+}
+.container-grid a >img{
+    height: 120px;
+    width: 300px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin:  30px auto;
+
+       
+}
+.menu ul li a{
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 90px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.searchbotao{
+    margin-right: 30px
+}
+.searchbotao:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1000ms;
+}
+#botao{
+    display: none;
+    justify-content: flex-end;
+    margin-right: 30px;
+    border-radius: 45px;
+    padding: 10px;
+}
+@media (max-width: 1400px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+    .menu ul li a{
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        margin-right: 90px;
+        font-size: 1rem;
+        color: black;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+    }
+}
+@media (max-width: 990px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #botao{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    } 
+    .menu ul li a{
+        display: none;
+    }
+}
+@media (max-width:780px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #input .form-control{
+        display: none;
+    }
+    .searchbotao{
+        display: none;
+    }
+}
