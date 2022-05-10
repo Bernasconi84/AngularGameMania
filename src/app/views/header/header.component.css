@@ -13,7 +13,7 @@
     width: 300px;
 }
 
-.menu ul {
+.menu  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
 
        
 }
-.menu ul li a{
+.menu  a{
     font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -41,13 +41,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1000ms;
 }
-#botao{
+.botao{
+   
     display: none;
     justify-content: flex-end;
     margin-right: 30px;
-    border-radius: 45px;
-    padding: 10px;
+  
+
 }
+
+
 @media (max-width: 1400px){
     *{
         margin: 0;
@@ -55,7 +58,7 @@
         box-sizing: border-box;
     }
    
-    .menu ul li a{
+    .menu  a{
         font-family: 'Nunito Sans', sans-serif;
         text-decoration: none;
         list-style: none;
@@ -73,20 +76,30 @@
         padding: 0;
         box-sizing: border-box;
     }
-    #botao{
+    .botao{
         display: flex;
         justify-content: flex-end;
-        margin-right: 30px;
+       
     } 
-    .menu ul li a{
+    .menu a{
         display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
     }
+    
 }
 @media (max-width:780px){
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
     }
     #input .form-control{
         display: none;
