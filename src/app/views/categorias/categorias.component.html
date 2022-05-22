@@ -1,26 +1,12 @@
 <section class="body">
-<h1>Escolha sua plataforma favorita.</h1>
-<div id="carouselExampleFade" class="carousel slide carousel-fade img-fluid" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/assets/xbox.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/assets/ps.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/assets/setup3.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<h1>Notícias</h1>
+<div id="noticias" class="noticias">
+  <div *ngFor="let noticia of listaNoticias" class="post">
+    <img [src]= noticia.imagem alt="">
+    <h3>{{noticia.titulo}}</h3>
+    <p>{{noticia.descricao}}</p>
   </div>
+</div>
 </section>
 <div id="baner2">
     <img class="banner2" src="/assets/bannercooler.jpg" alt="banner coller">

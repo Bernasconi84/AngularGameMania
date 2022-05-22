@@ -9,6 +9,28 @@
     padding-bottom: 30px;
    
 }
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    flex-wrap: wrap;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: auto;
+    margin: 30px;
+    padding: 15px;
+}
+.post> img{
+    width: 340px;
+}
+.post> p{
+    text-align: justify;
+}
 .carousel-inner .carousel-item > img{
     max-width: 100%;
     height: 900px;

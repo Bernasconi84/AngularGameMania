@@ -12,6 +12,7 @@ import { FooterComponent } from './views/footer/footer.component';
 import { CategoriasComponent } from './views/categorias/categorias.component';
 import { JogosComponent } from './views/jogos/jogos.component';
 import { LoginComponent } from './views/login/login.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -22,13 +23,14 @@ import { LoginComponent } from './views/login/login.component';
     FooterComponent,
     CategoriasComponent,
     JogosComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
