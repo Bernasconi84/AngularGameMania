@@ -1,16 +1,16 @@
 <section class="body">
     <main class="container">
         <h2>Login</h2>
-        <form action="">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()" >
             <div class="input">
-                <input type="email" name="email" id="email" placeholder="Entre com seu e-mail">
+                <input type="email" name="email" id="email" placeholder="Entre com seu e-mail" [(ngModel)]="loginModel.email">
                 <div class="underline"></div>
             </div>
             <div class="input">
-                <input type="password" name="senha" id="senha" placeholder="Entre com sua senha">
+                <input type="password" name="senha" id="senha" placeholder="Entre com sua senha" [(ngModel)]="loginModel.senha">
                 <div class="underline"></div>
             </div>
-            <button onclick="enviar()" type="submit" value="">Continue</button>
+            <input id="botao-enviar()" type="submit" value="Continue">
         </form>
         <div class="footer">
             <span>ou cadastre se com redes sociais</span>

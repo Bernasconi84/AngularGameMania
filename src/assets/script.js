@@ -9,7 +9,7 @@ let menu = document.getElementById("menu")
 
 
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel').any({
       loop: true,
       margin: 5,
       nav: true,
